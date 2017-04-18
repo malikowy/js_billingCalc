@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="pl">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Gabriel Ignatiuk - practice page</title>
+    <meta name="author" content="Gabriel Ignatiuk">
+    <meta name="description" content="practice page">
+    <meta name="keywords" content="practice page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Kalkulator pieniędzy do wydania</h1>
+        <button id="newBtn">+ Add new month</button>
+    </div>
+    <div class="content">
+        <form id="survey">
+            <label for="month">Miesiąc:</label>
+            <input id="month" type="text" value="miesiąc">
+            <label for="income">Miesięczny wpływ:</label>
+            <input id="income" type="number" value="0">
+            <label for="lpg">Rachunek za gaz:</label>
+            <input id="lpg" type="number" value="0">
+            <label for="ign">Rachunek za prąd:</label>
+            <input id="ign" type="number" value="0">
+            <label for="dsl">Rachunek za internet:</label>
+            <input id="dsl" type="number" value="0">
+            <label for="phone">Rachunek za telefon komórkowy:</label>
+            <input id="phone" type="number" value="0">
+            <label for="garbage">Rachunek za śmieci:</label>
+            <input id="garbage" type="number" value="0">
+            <label for="savings">Kwota do odłożenia w oszczędności:</label>
+            <input id="savings" type="number" value="0">
+            <label for="daily">Kwota do posługiwania się przez resztę miesiąca:</label>
+            <input id="daily" type="number" value="0">
+            <button id="addBtn">Add to list</button>
+            <button id="cancelBtn">Cancel Adding</button>
+        </form>
+    </div>
+    <div class="content-show">
+        <h2>Lista miesięcy</h2>
+        <div class="months-list">
+        </div>
+    </div>
+    <!-- SCRIPT FILES SECTION -->
+    <script src="main.js"></script>
+</body>
+
+</html>

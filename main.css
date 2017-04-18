@@ -1,0 +1,22 @@
+button {
+    border-radius: 10px;
+    border: 3px solid gray;
+    margin: 10px;
+    display: block;
+}
+
+#survey {
+    background: lightgray;
+    padding: 15px 20px;
+    display: none;
+}
+
+#survey label {
+    display: block;
+    margin: 2px;
+}
+
+#survey input {
+    min-width: 50px;
+    max-width: 150px;
+}
