@@ -85,18 +85,18 @@ window.onload = function () {
             monthsList = JSON.parse(localStorage['monthCalc']);
             months.innerHTML = "";
             for (var n in monthsList) {
-                var str = '<div class="list">';
-                str += '<div class="month"><p>Miesiąc: ' + monthsList[n].month + '</p></div>';
-                str += '<div class="income"><p>Wpływ: ' + monthsList[n].income + 'zł</p></div>';
-                str += '<div class="lpg"><p>Gaz: ' + monthsList[n].lpg + 'zł</p></div>';
-                str += '<div class="ign"><p>Prąd: ' + monthsList[n].ign + 'zł</p></div>';
-                str += '<div class="dsl"><p>Internet: ' + monthsList[n].dsl + 'zł</p></div>';
-                str += '<div class="phone"><p>Komórka: ' + monthsList[n].phone + 'zł</p></div>';
-                str += '<div class="garbage"><p>Śmieci: ' + monthsList[n].garbage + 'zł</p></div>';
-                str += '<div class="savings"><p>Odłożone: ' + monthsList[n].savings + 'zł</p></div>';
-                str += '<div class="daily"><p>Pozostało na miesiąc: ' + monthsList[n].daily + 'zł</p></div>';
-                str += '<div class="del"><button class="delbtn" data-id="' + n + '">DELETE</button></div>';
-                str += '</div>';
+                var str = '<tr class="list">';
+                str += '<td class="month">' + monthsList[n].month + '</td>';
+                str += '<td class="income">' + monthsList[n].income + 'zł</td>';
+                str += '<td class="lpg">' + monthsList[n].lpg + 'zł</td>';
+                str += '<td class="ign">' + monthsList[n].ign + 'zł</td>';
+                str += '<td class="dsl">' + monthsList[n].dsl + 'zł</td>';
+                str += '<td class="phone">' + monthsList[n].phone + 'zł</td>';
+                str += '<td class="garbage">' + monthsList[n].garbage + 'zł</td>';
+                str += '<td class="savings">' + monthsList[n].savings + 'zł</td>';
+                str += '<td class="daily">' + monthsList[n].daily + 'zł</td>';
+                str += '<td class="del"><button class="delbtn" data-id="' + n + '">USUŃ</button></td>';
+                str += '</tr>';
                 months.innerHTML += str;
             }
             console.log("Załadowano localStorage");

@@ -22,7 +22,7 @@
 <body>
     <div class="header">
         <h1>Kalkulator pieniędzy do wydania</h1>
-        <button id="newBtn">+ Add new month</button>
+        <button id="newBtn">+ Dodaj nowy miesiąc</button>
     </div>
     <div class="content">
         <form id="survey">
@@ -44,14 +44,32 @@
             <input id="savings" type="number" value="0">
             <label for="daily">Kwota do posługiwania się przez resztę miesiąca:</label>
             <input id="daily" type="number" value="0">
-            <button id="addBtn">Add to list</button>
-            <button id="cancelBtn">Cancel Adding</button>
+            <button id="addBtn">Dodaj do listy</button>
+            <button id="cancelBtn">Cofnij dodawanie</button>
         </form>
     </div>
     <div class="content-show">
         <h2>Lista miesięcy</h2>
-        <div class="months-list">
-        </div>
+        <table>
+        <thead>
+        <tr>
+            <th>Miesiąc</th>
+            <th>Mies. wpływ</th>
+            <th>Gaz</th>
+            <th>Prąd</th>
+            <th>Internet</th>
+            <th>Telefon</th>
+            <th>Śmieci</th>
+            <th>Odłożone</th>
+            <th>Do wydania</th>
+            <th>USUŃ</th>
+        </tr>
+        </thead>
+        <tbody class="months-list">
+        <!-- ZAWARTOŚć LOCALSTORAGE -->
+        </tbody>
+    </table>
+
     </div>
     <!-- SCRIPT FILES SECTION -->
     <script src="main.js"></script>
